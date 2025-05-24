@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,8 +7,15 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link href="/" className="text-xl font-medium">
-              JL Media
+            <Link href="/" className="inline-block">
+              <div className="relative w-32 h-8">
+                <Image
+                  src="/placeholder.svg?height=32&width=128"
+                  alt="JL Media Logo"
+                  fill
+                  className="object-contain brightness-0 invert"
+                />
+              </div>
             </Link>
             <p className="text-white/70 text-sm">
               Criando conteúdo autêntico e estratégias eficientes para redes sociais desde 2015.

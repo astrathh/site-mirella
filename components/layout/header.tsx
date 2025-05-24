@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
@@ -16,8 +17,16 @@ export function Header() {
 
   return (
     <header className="container mx-auto py-6 px-4 flex items-center justify-between">
-      <Link href="/" className="flex items-center gap-2 font-medium text-[#2E4365]">
-        <span className="text-xl">JL Media</span>
+      <Link href="/" className="flex items-center gap-2">
+        <div className="relative w-32 h-8">
+          <Image
+            src="/placeholder.svg?height=32&width=128"
+            alt="JL Media Logo"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </Link>
       <nav className="hidden md:flex items-center gap-8">
         <Link

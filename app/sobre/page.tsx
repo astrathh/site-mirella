@@ -25,7 +25,7 @@ export default function SobrePage() {
               className="object-cover rounded-full border-4 border-[#E59D2C]"
             />
           </div>
-          <h1 className="text-4xl md:text-5xl font-medium text-[#2E4365] mb-4">Mirella Santos</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Santos</h1>
           <p className="text-xl text-[#8A3B08] mb-6">Social Media Manager & Content Creator</p>
           <div className="flex flex-wrap justify-center gap-4 text-gray-600 mb-8">
             <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ export default function SobrePage() {
 
         {/* About Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-medium text-[#2E4365] mb-6 text-center">Sobre Mim</h2>
+          <h2 className="text-3xl font-bold text-[#2E4365] mb-6 text-center">Sobre Mim</h2>
           <div className="max-w-4xl mx-auto">
             <Card className="border border-[#F3D58D] rounded-md">
               <CardContent className="p-8">
@@ -72,7 +72,7 @@ export default function SobrePage() {
 
         {/* Experience Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-medium text-[#2E4365] mb-8 text-center">Experiência Profissional</h2>
+          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Experiência Profissional</h2>
           <div className="max-w-4xl mx-auto space-y-6">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
@@ -82,7 +82,7 @@ export default function SobrePage() {
 
         {/* Skills Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-medium text-[#2E4365] mb-8 text-center">Habilidades</h2>
+          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Habilidades</h2>
           <div className="max-w-4xl mx-auto">
             <Card className="border border-[#F3D58D] rounded-md">
               <CardContent className="p-8">
@@ -117,7 +117,7 @@ export default function SobrePage() {
 
         {/* Education Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-medium text-[#2E4365] mb-8 text-center">Formação</h2>
+          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Formação</h2>
           <div className="max-w-4xl mx-auto space-y-6">
             {education.map((edu, index) => (
               <EducationCard key={index} {...edu} />
@@ -127,7 +127,7 @@ export default function SobrePage() {
 
         {/* Certifications Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-medium text-[#2E4365] mb-8 text-center">Certificações</h2>
+          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Certificações</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
             {certifications.map((cert, index) => (
               <CertificationCard key={index} {...cert} />

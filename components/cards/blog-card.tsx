@@ -16,9 +16,9 @@ interface BlogCardProps {
 
 export function BlogCard({ title, excerpt, author, authorAvatar, date, slug, image, category }: BlogCardProps) {
   return (
-    <Card className="border border-[#F3D58D] rounded-md overflow-hidden group cursor-pointer hover:border-[#E59D2C] transition-all">
-      <Link href={`/blog/${slug}`}>
-        <div className="relative h-[200px] overflow-hidden">
+    <Card className="border border-[#F3D58D] rounded-md overflow-hidden group cursor-pointer hover:border-[#E59D2C] transition-all h-[480px] flex flex-col">
+      <Link href={`/blog/${slug}`} className="h-full flex flex-col">
+        <div className="relative h-[200px] overflow-hidden flex-shrink-0">
           <Image
             src={image || "/placeholder.svg"}
             alt={title}
@@ -31,8 +31,8 @@ export function BlogCard({ title, excerpt, author, authorAvatar, date, slug, ima
             </span>
           </div>
         </div>
-        <CardContent className="p-6">
-          <div className="flex items-center gap-4 mb-4">
+        <CardContent className="p-6 flex flex-col flex-grow">
+          <div className="flex items-center gap-4 mb-4 flex-shrink-0">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full overflow-hidden relative">
                 <Image src={authorAvatar || "/placeholder.svg"} alt={author} fill className="object-cover" />
@@ -44,11 +44,11 @@ export function BlogCard({ title, excerpt, author, authorAvatar, date, slug, ima
               <span className="text-sm">{date}</span>
             </div>
           </div>
-          <h3 className="text-lg font-medium text-[#2E4365] mb-3 group-hover:text-[#8A3B08] transition-colors line-clamp-2">
+          <h3 className="text-lg font-medium text-[#2E4365] mb-3 group-hover:text-[#8A3B08] transition-colors line-clamp-2 flex-shrink-0">
             {title}
           </h3>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-3">{excerpt}</p>
-          <div className="flex items-center gap-2 text-[#E59D2C] group-hover:text-[#8A3B08] transition-colors">
+          <p className="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow leading-relaxed">{excerpt}</p>
+          <div className="flex items-center gap-2 text-[#E59D2C] group-hover:text-[#8A3B08] transition-colors flex-shrink-0">
             <span className="text-sm font-medium">Ler mais</span>
             <ArrowRight className="w-4 h-4" />
           </div>

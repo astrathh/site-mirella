@@ -8,8 +8,8 @@ interface PortfolioCardProps {
 
 export function PortfolioCard({ title, category, image }: PortfolioCardProps) {
   return (
-    <div className="group relative overflow-hidden cursor-pointer">
-      <div className="relative h-[350px] overflow-hidden">
+    <div className="group relative overflow-hidden cursor-pointer h-[350px]">
+      <div className="relative h-full overflow-hidden rounded-md">
         <Image
           src={image || "/placeholder.svg"}
           alt={title}

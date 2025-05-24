@@ -25,12 +25,12 @@ export default function SobrePage() {
               className="object-cover rounded-full border-4 border-[#E59D2C]"
             />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Santos</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Modina</h1>
           <p className="text-xl text-[#8A3B08] mb-6">Social Media Manager & Content Creator</p>
           <div className="flex flex-wrap justify-center gap-4 text-gray-600 mb-8">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>São Paulo, SP</span>
+              <span>Sorocaba, SP</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />

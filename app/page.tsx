@@ -24,8 +24,8 @@ export default function Home() {
         <section id="servicos" className="container mx-auto px-4 py-16 md:py-24">
           <FadeInUp>
             <div className="text-center max-w-2xl mx-auto mb-16">
-              <div className="uppercase text-[#8A3B08] tracking-widest text-sm font-medium mb-3">Nossos serviços</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#2E4365] mb-6">Nossos Serviços</h2>
+              <div className="uppercase text-[#8A3B08] tracking-widest text-sm font-medium mb-3">Meus serviços</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#2E4365] mb-6">O que sei fazer de melhor</h2>
               <p className="text-gray-600">
                 Soluções completas e estratégicas para transformar sua presença digital em resultados concretos.
               </p>

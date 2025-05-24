@@ -5,6 +5,7 @@ import { Calendar, ArrowLeft, Share2, Heart, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+export const runtime = 'edge';
 
 interface BlogPostPageProps {
   params: {

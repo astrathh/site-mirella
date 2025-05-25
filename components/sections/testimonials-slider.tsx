@@ -56,10 +56,12 @@ export function TestimonialsSlider() {
         >
           {testimonials.map((testimonial, index) => (
             <div key={index} className="w-full flex-shrink-0">
-              <div className="bg-white p-8 border border-[#F3D58D] rounded-md mx-4">
-                <p className="text-gray-600 italic mb-6 text-lg leading-relaxed">"{testimonial.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden relative">
+              <div className="bg-white p-4 md:p-8 border border-[#F3D58D] rounded-md mx-2 md:mx-4">
+                <p className="text-gray-600 italic mb-4 md:mb-6 text-base md:text-lg leading-relaxed">
+                  "{testimonial.text}"
+                </p>
+                <div className="flex items-center gap-3 md:gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden relative">
                     <Image
                       src={testimonial.avatar || "/placeholder.svg"}
                       alt={testimonial.author}
@@ -68,8 +70,8 @@ export function TestimonialsSlider() {
                     />
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#2E4365]">{testimonial.author}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <h4 className="font-medium text-[#2E4365] text-sm md:text-base">{testimonial.author}</h4>
+                    <p className="text-xs md:text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>
               </div>
@@ -79,12 +81,12 @@ export function TestimonialsSlider() {
       </div>
 
       {/* Dots indicator */}
-      <div className="flex justify-center gap-2 mt-8">
+      <div className="flex justify-center gap-2 mt-6 md:mt-8">
         {testimonials.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors ${
               index === currentIndex ? "bg-[#E59D2C]" : "bg-gray-300"
             }`}
           />

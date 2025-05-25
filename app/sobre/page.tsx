@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Mail, Phone, Download } from "lucide-react"
 import { experiences, technicalSkills, tools, education, certifications } from "@/data/resume"
+import { FadeInUp } from "@/components/animations/fade-in-up"
 
 export default function SobrePage() {
   return (
@@ -16,124 +17,199 @@ export default function SobrePage() {
 
       <main className="container mx-auto px-4 py-12">
         {/* Hero Section */}
-        <section className="text-center mb-16">
-          <div className="relative w-32 h-32 mx-auto mb-6">
-            <Image
-              src="/placeholder.svg?height=128&width=128"
-              alt="Mirella - Social Media Professional"
-              fill
-              className="object-cover rounded-full border-4 border-[#E59D2C]"
-            />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Modina</h1>
-          <p className="text-xl text-[#8A3B08] mb-6">Social Media Manager & Content Creator</p>
-          <div className="flex flex-wrap justify-center gap-4 text-gray-600 mb-8">
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
-              <span>Sorocaba, SP</span>
+        <FadeInUp>
+          <section className="text-center mb-16">
+            <div className="relative w-32 h-32 mx-auto mb-6">
+              <Image
+                src="/placeholder.svg?height=128&width=128"
+                alt="Mirella Modina - Social Media Professional"
+                fill
+                className="object-cover rounded-full border-4 border-[#E59D2C]"
+              />
             </div>
-            <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              <span>mirella@jlmedia.com</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Modina</h1>
+            <p className="text-xl text-[#8A3B08] mb-6">Social Media Manager, Videomaker e Fotógrafa</p>
+            <div className="flex flex-wrap justify-center gap-4 text-gray-600 mb-8">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                <span>Sorocaba, SP</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <span>mirelladefariamodina@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                <span>+55 (11) 99999-9999</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>+55 (11) 99999-9999</span>
-            </div>
-          </div>
-          <Button className="bg-[#E59D2C] hover:bg-[#8A3B08] text-white rounded-md uppercase text-xs tracking-wider px-8 py-3 font-medium transition-all duration-300 group relative overflow-hidden">
-            <span className="relative z-10 flex items-center gap-2">
-              <Download className="w-4 h-4" />
-              Download CV
-            </span>
-            <span className="absolute inset-0 bg-[#8A3B08] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-          </Button>
-        </section>
+            <Button className="bg-[#E59D2C] hover:bg-[#8A3B08] text-white rounded-md uppercase text-xs tracking-wider px-8 py-3 font-medium transition-all duration-300 group relative overflow-hidden">
+              <span className="relative z-10 flex items-center gap-2">
+                <Download className="w-4 h-4" />
+                Download CV
+              </span>
+              <span className="absolute inset-0 bg-[#8A3B08] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+            </Button>
+          </section>
+        </FadeInUp>
 
         {/* About Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E4365] mb-6 text-center">Sobre Mim</h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="border border-[#F3D58D] rounded-md">
-              <CardContent className="p-8">
-                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  Sou uma profissional apaixonada por storytelling e criação de conteúdo autêntico para redes sociais.
-                  Com mais de 5 anos de experiência no mercado digital, especializo-me em desenvolver estratégias
-                  personalizadas que conectam marcas ao seu público-alvo de forma genuína e impactante.
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  Minha missão é transformar a presença digital dos meus clientes através de conteúdo de qualidade,
-                  criatividade e estratégias eficientes que geram resultados mensuráveis e engajamento real.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        <FadeInUp delay={200}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Sobre Mim</h2>
+            <div className="max-w-4xl mx-auto">
+              <Card className="border border-[#F3D58D] rounded-md">
+                <CardContent className="p-8">
+                  <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
+                    <p>
+                      Sou <strong className="text-[#2E4365]">Mirella Modina</strong>, bacharel em Rádio, TV e Internet,
+                      Social Media Manager, videomaker e fotógrafa. Atuo há mais de{" "}
+                      <strong className="text-[#8A3B08]">7 anos</strong> no mercado de marketing digital e produção de
+                      conteúdo, ajudando marcas a se posicionarem de forma estratégica, profissional e relevante.
+                    </p>
+
+                    <p>
+                      Uno <strong className="text-[#E59D2C]">criatividade, técnica e estratégia</strong> para
+                      transformar redes sociais em vitrines que geram valor, conexão e resultado.
+                    </p>
+
+                    <p>
+                      Apesar do <strong className="text-[#2E4365]">Instagram</strong> ser meu principal canal de
+                      atuação, também desenvolvo estratégias e conteúdos para{" "}
+                      <strong className="text-[#8A3B08]">YouTube e LinkedIn</strong>, sempre com foco em posicionamento
+                      profissional, geração de valor e crescimento digital.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        </FadeInUp>
+
+        {/* Achievements Section */}
+        <FadeInUp delay={300}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Resultados Alcançados</h2>
+            <div className="max-w-4xl mx-auto">
+              <Card className="border border-[#F3D58D] rounded-md">
+                <CardContent className="p-8">
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    Ao longo da minha trajetória, ajudei marcas e profissionais a:
+                  </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3 text-gray-600 text-lg">
+                      <div className="w-2 h-2 bg-[#E59D2C] rounded-full mt-3 flex-shrink-0"></div>
+                      <span>
+                        <strong className="text-[#2E4365]">Estruturar perfis fortes</strong>, com branding,
+                        posicionamento e comunicação alinhada.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3 text-gray-600 text-lg">
+                      <div className="w-2 h-2 bg-[#E59D2C] rounded-full mt-3 flex-shrink-0"></div>
+                      <span>
+                        <strong className="text-[#2E4365]">Crescer em seguidores qualificados</strong>, aumentar o
+                        alcance e gerar mais engajamento.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3 text-gray-600 text-lg">
+                      <div className="w-2 h-2 bg-[#E59D2C] rounded-full mt-3 flex-shrink-0"></div>
+                      <span>
+                        <strong className="text-[#2E4365]">Transformar redes sociais</strong> em canais de vendas,
+                        autoridade e conexão.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3 text-gray-600 text-lg">
+                      <div className="w-2 h-2 bg-[#E59D2C] rounded-full mt-3 flex-shrink-0"></div>
+                      <span>
+                        <strong className="text-[#2E4365]">Produzir conteúdos profissionais</strong>, tanto para redes
+                        sociais como para campanhas específicas, vídeos institucionais e comerciais.
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="mt-8 p-6 bg-[#F3D58D]/20 rounded-lg">
+                    <p className="text-[#8A3B08] font-medium text-lg italic text-center">
+                      "Meu trabalho não é sobre estar nas redes, é sobre estar da maneira certa, com estratégia, clareza
+                      e consistência."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        </FadeInUp>
 
         {/* Experience Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Experiência Profissional</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {experiences.map((exp, index) => (
-              <ExperienceCard key={index} {...exp} />
-            ))}
-          </div>
-        </section>
+        <FadeInUp delay={400}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Minha Experiência</h2>
+            <div className="max-w-4xl mx-auto space-y-6">
+              {experiences.map((exp, index) => (
+                <ExperienceCard key={index} {...exp} />
+              ))}
+            </div>
+          </section>
+        </FadeInUp>
 
         {/* Skills Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Habilidades</h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="border border-[#F3D58D] rounded-md">
-              <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-medium text-[#2E4365] mb-4">Técnicas</h3>
-                    <ul className="space-y-2">
-                      {technicalSkills.map((skill, index) => (
-                        <li key={index} className="flex items-center gap-2 text-gray-600">
-                          <div className="w-2 h-2 bg-[#E59D2C] rounded-full"></div>
-                          {skill}
-                        </li>
-                      ))}
-                    </ul>
+        <FadeInUp delay={500}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Minhas Habilidades</h2>
+            <div className="max-w-4xl mx-auto">
+              <Card className="border border-[#F3D58D] rounded-md">
+                <CardContent className="p-8">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-xl font-medium text-[#2E4365] mb-6">Habilidades Técnicas</h3>
+                      <ul className="space-y-3">
+                        {technicalSkills.map((skill, index) => (
+                          <li key={index} className="flex items-start gap-3 text-gray-600">
+                            <div className="w-2 h-2 bg-[#E59D2C] rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-sm leading-relaxed">{skill}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-medium text-[#2E4365] mb-6">Ferramentas</h3>
+                      <ul className="space-y-3">
+                        {tools.map((tool, index) => (
+                          <li key={index} className="flex items-center gap-3 text-gray-600">
+                            <div className="w-2 h-2 bg-[#E59D2C] rounded-full flex-shrink-0"></div>
+                            <span className="text-sm">{tool}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-medium text-[#2E4365] mb-4">Ferramentas</h3>
-                    <ul className="space-y-2">
-                      {tools.map((tool, index) => (
-                        <li key={index} className="flex items-center gap-2 text-gray-600">
-                          <div className="w-2 h-2 bg-[#E59D2C] rounded-full"></div>
-                          {tool}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        </FadeInUp>
 
         {/* Education Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Formação</h2>
-          <div className="max-w-4xl mx-auto space-y-6">
-            {education.map((edu, index) => (
-              <EducationCard key={index} {...edu} />
-            ))}
-          </div>
-        </section>
+        <FadeInUp delay={600}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Formação</h2>
+            <div className="max-w-4xl mx-auto space-y-6">
+              {education.map((edu, index) => (
+                <EducationCard key={index} {...edu} />
+              ))}
+            </div>
+          </section>
+        </FadeInUp>
 
         {/* Certifications Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Certificações</h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-            {certifications.map((cert, index) => (
-              <CertificationCard key={index} {...cert} />
-            ))}
-          </div>
-        </section>
+        <FadeInUp delay={700}>
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Certificações</h2>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+              {certifications.map((cert, index) => (
+                <CertificationCard key={index} {...cert} />
+              ))}
+            </div>
+          </section>
+        </FadeInUp>
       </main>
 
       <Footer />

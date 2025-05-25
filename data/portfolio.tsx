@@ -1,32 +1,22 @@
 export const projects = [
   {
-    title: "Campanha Verão",
+    title: "Estratégia, posicionamento e vendas no digital",
     category: "Social Media",
     image: "/placeholder.svg?height=350&width=400",
   },
   {
-    title: "Natureza Viva",
-    category: "Fotografia",
+    title: "Imagens que conectam"
+    category: "Audiovisual",
     image: "/placeholder.svg?height=350&width=400",
   },
   {
-    title: "Coleção Inverno",
-    category: "Campanha",
+    title: "Presença que gera valor",
+    category: "WebDesign",
     image: "/placeholder.svg?height=350&width=400",
   },
   {
-    title: "Projeto Praia",
-    category: "Vídeo",
-    image: "/placeholder.svg?height=350&width=400",
-  },
-  {
-    title: "Lançamento Produto",
-    category: "Marketing",
-    image: "/placeholder.svg?height=350&width=400",
-  },
-  {
-    title: "Evento Corporativo",
-    category: "Estratégia",
+    title: "Memórias que vendem",
+    category: "Cobertura de Eventos",
     image: "/placeholder.svg?height=350&width=400",
   },
 ]

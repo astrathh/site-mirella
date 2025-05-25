@@ -133,7 +133,7 @@ export default function Home() {
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                           </svg>
                         </div>
-                        <span className="text-gray-600 text-lg">contato@jlmedia.com</span>
+                        <span className="text-gray-600 text-lg">mirelladefariamodina@gmail.com</span>
                       </div>
                     </FadeInUp>
 
@@ -155,7 +155,7 @@ export default function Home() {
                             <circle cx="12" cy="10" r="3" />
                           </svg>
                         </div>
-                        <span className="text-gray-600 text-lg">São Paulo, SP - Brasil</span>
+                        <span className="text-gray-600 text-lg">Sorocaba, SP - Brasil</span>
                       </div>
                     </FadeInUp>
                   </div>

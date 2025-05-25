@@ -56,17 +56,17 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#" className="hover:text-white transition-colors">
-                  Criação de Conteúdo
+                  Audiovisual
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white transition-colors">
-                  Estratégia Digital
+                  Web Design
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white transition-colors">
-                  Consultoria
+                  Cobertura de Eventos
                 </Link>
               </li>
             </ul>
@@ -82,7 +82,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/50 text-sm">
-          <p>© {new Date().getFullYear()} JL Media. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Mirella Modina. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

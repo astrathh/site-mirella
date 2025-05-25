@@ -5,7 +5,7 @@ export const projects = [
     image: "/placeholder.svg?height=350&width=400",
   },
   {
-    title: "Imagens que conectam"
+    title: "Imagens que conectam",
     category: "Audiovisual",
     image: "/placeholder.svg?height=350&width=400",
   },

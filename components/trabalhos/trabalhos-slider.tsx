@@ -102,9 +102,10 @@ function TrabalhoCard({ trabalho }: TrabalhoCardProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative overflow-hidden rounded-lg bg-[#2E4365] transition-transform duration-300 group-hover:scale-105">
+      {/* Altura fixa para todos os cards */}
+      <div className="relative overflow-hidden rounded-lg bg-[#2E4365] transition-transform duration-300 group-hover:scale-105 h-[400px] flex flex-col">
         {/* Image */}
-        <div className="relative h-[180px] md:h-[200px]">
+        <div className="relative h-[200px] flex-shrink-0">
           <Image
             src={trabalho.image || "/placeholder.svg"}
             alt={trabalho.title}
@@ -129,28 +130,25 @@ function TrabalhoCard({ trabalho }: TrabalhoCardProps) {
           </div>
         </div>
 
-        {/* Content */}
-        <div className="p-4 bg-[#2E4365] text-white">
-          <div className="flex items-center gap-2 mb-2">
+        {/* Content - altura flexível */}
+        <div className="p-4 bg-[#2E4365] text-white flex-grow flex flex-col">
+          <div className="flex items-center gap-2 mb-2 flex-shrink-0">
             <span className="text-[#F3D58D] text-xs uppercase tracking-wider font-medium">{trabalho.client}</span>
             <span className="text-white/60 text-xs">•</span>
             <span className="text-white/60 text-xs">{trabalho.year}</span>
           </div>
 
-          <h3 className="font-medium text-white mb-2 line-clamp-1">{trabalho.title}</h3>
+          <h3 className="font-medium text-white mb-2 line-clamp-1 flex-shrink-0">{trabalho.title}</h3>
 
-          <p className="text-white/80 text-sm mb-3 line-clamp-2 leading-relaxed">{trabalho.description}</p>
+          <p className="text-white/80 text-sm mb-3 line-clamp-2 leading-relaxed flex-grow">{trabalho.description}</p>
 
-          {/* Tags */}
-          <div className="flex flex-wrap gap-1">
+          {/* Tags - apenas 3 tags, sem +1 */}
+          <div className="flex flex-wrap gap-1 flex-shrink-0">
             {trabalho.tags.slice(0, 3).map((tag, index) => (
               <span key={index} className="bg-[#E59D2C]/20 text-[#F3D58D] px-2 py-1 rounded-full text-xs">
                 {tag}
               </span>
             ))}
-            {trabalho.tags.length > 3 && (
-              <span className="text-white/60 text-xs px-2 py-1">+{trabalho.tags.length - 3}</span>
-            )}
           </div>
         </div>
       </div>

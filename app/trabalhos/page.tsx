@@ -14,9 +14,9 @@ export default function TrabalhosPage() {
         <FadeInUp>
           <section className="text-center mb-16">
             <div className="uppercase text-[#8A3B08] tracking-widest text-sm font-medium mb-3">Portfólio</div>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-6">Nossos Trabalhos</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-6">Meus Trabalhos</h1>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Explore nossa coleção de projetos organizados por categoria. Cada trabalho representa nossa dedicação em
+              Explore minha coleção de projetos organizados por categoria. Cada trabalho representa minha dedicação em
               criar soluções visuais impactantes e estratégias eficientes.
             </p>
           </section>

@@ -21,9 +21,21 @@ export default function Home() {
         <HeroSection />
 
         {/* Services Section */}
-        <section id="servicos" className="container mx-auto px-4 py-16 md:py-24">
+        <section id="servicos" className="container mx-auto px-4 py-16 md:py-24 relative">
+          {/* Flor decorativa */}
+          <div
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 opacity-5 pointer-events-none -rotate-45 overflow-hidden"
+            style={{
+              backgroundImage: "url('/flor-decorativa.svg')",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              filter: "sepia(1) hue-rotate(25deg) saturate(2) brightness(0.8)",
+            }}
+          />
+
           <FadeInUp>
-            <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="text-center max-w-2xl mx-auto mb-16 relative z-10">
               <div className="uppercase text-[#8A3B08] tracking-widest text-sm font-medium mb-3">Meus serviços</div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#2E4365] mb-6">O que sei fazer de melhor</h2>
               <p className="text-gray-600">
@@ -32,7 +44,7 @@ export default function Home() {
             </div>
           </FadeInUp>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 relative z-10">
             {services.map((service, index) => (
               <FadeInUp key={index} delay={index * 150}>
                 <ServiceCard title={service.title} description={service.description} icon={service.icon} />
@@ -54,7 +66,8 @@ export default function Home() {
               </div>
             </FadeInUp>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Grid 2x2 para 4 cards */}
+            <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
               {projects.map((project, index) => (
                 <FadeInScale key={index} delay={index * 100}>
                   <PortfolioCard title={project.title} category={project.category} image={project.image} />
@@ -96,11 +109,12 @@ export default function Home() {
                   <div className="space-y-6">
                     <FadeInUp delay={200}>
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
+                            width="16"
+                            height="16"
+                            className="md:w-5 md:h-5"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -111,17 +125,18 @@ export default function Home() {
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                           </svg>
                         </div>
-                        <span className="text-gray-600 text-lg">+55 (11) 99999-9999</span>
+                        <span className="text-gray-600 text-sm md:text-lg">+55 (11) 99999-9999</span>
                       </div>
                     </FadeInUp>
 
                     <FadeInUp delay={300}>
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
+                            width="16"
+                            height="16"
+                            className="md:w-5 md:h-5"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -133,17 +148,20 @@ export default function Home() {
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                           </svg>
                         </div>
-                        <span className="text-gray-600 text-lg">mirelladefariamodina@gmail.com</span>
+                        <span className="text-gray-600 text-xs md:text-lg break-all">
+                          mirelladefariamodina@gmail.com
+                        </span>
                       </div>
                     </FadeInUp>
 
                     <FadeInUp delay={400}>
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F3D58D] flex items-center justify-center text-[#8A3B08]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
+                            width="16"
+                            height="16"
+                            className="md:w-5 md:h-5"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -155,7 +173,7 @@ export default function Home() {
                             <circle cx="12" cy="10" r="3" />
                           </svg>
                         </div>
-                        <span className="text-gray-600 text-lg">Sorocaba, SP - Brasil</span>
+                        <span className="text-gray-600 text-sm md:text-lg">Sorocaba, SP - Brasil</span>
                       </div>
                     </FadeInUp>
                   </div>

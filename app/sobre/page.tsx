@@ -3,11 +3,10 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { ExperienceCard } from "@/components/cards/experience-card"
 import { EducationCard } from "@/components/cards/education-card"
-import { CertificationCard } from "@/components/cards/certification-card"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Mail, Phone, Download } from "lucide-react"
-import { experiences, technicalSkills, tools, education, certifications } from "@/data/resume"
+import { experiences, technicalSkills, tools, education } from "@/data/resume"
 import { FadeInUp } from "@/components/animations/fade-in-up"
 
 export default function SobrePage() {
@@ -21,14 +20,14 @@ export default function SobrePage() {
           <section className="text-center mb-16">
             <div className="relative w-32 h-32 mx-auto mb-6">
               <Image
-                src="/placeholder.svg?height=128&width=128"
+                src="/images/mirella-profile.jpg"
                 alt="Mirella Modina - Social Media Professional"
                 fill
                 className="object-cover rounded-full border-4 border-[#E59D2C]"
               />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-[#2E4365] mb-4">Mirella Modina</h1>
-            <p className="text-xl text-[#8A3B08] mb-6">Social Media Manager, Videomaker e Fotógrafa</p>
+            <p className="text-xl text-[#2E4365] mb-6">Social Media Manager, Videomaker e Fotógrafa</p>
             <div className="flex flex-wrap justify-center gap-4 text-gray-600 mb-8">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -64,19 +63,19 @@ export default function SobrePage() {
                     <p>
                       Sou <strong className="text-[#2E4365]">Mirella Modina</strong>, bacharel em Rádio, TV e Internet,
                       Social Media Manager, videomaker e fotógrafa. Atuo há mais de{" "}
-                      <strong className="text-[#8A3B08]">7 anos</strong> no mercado de marketing digital e produção de
+                      <strong className="text-[#2E4365]">7 anos</strong> no mercado de marketing digital e produção de
                       conteúdo, ajudando marcas a se posicionarem de forma estratégica, profissional e relevante.
                     </p>
 
                     <p>
-                      Uno <strong className="text-[#E59D2C]">criatividade, técnica e estratégia</strong> para
+                      Uno <strong className="text-[#2E4365]">criatividade, técnica e estratégia</strong> para
                       transformar redes sociais em vitrines que geram valor, conexão e resultado.
                     </p>
 
                     <p>
                       Apesar do <strong className="text-[#2E4365]">Instagram</strong> ser meu principal canal de
                       atuação, também desenvolvo estratégias e conteúdos para{" "}
-                      <strong className="text-[#8A3B08]">YouTube e LinkedIn</strong>, sempre com foco em posicionamento
+                      <strong className="text-[#2E4365]">YouTube e LinkedIn</strong>, sempre com foco em posicionamento
                       profissional, geração de valor e crescimento digital.
                     </p>
                   </div>
@@ -127,7 +126,7 @@ export default function SobrePage() {
                     </li>
                   </ul>
                   <div className="mt-8 p-6 bg-[#F3D58D]/20 rounded-lg">
-                    <p className="text-[#8A3B08] font-medium text-lg italic text-center">
+                    <p className="text-[#2E4365] font-medium text-lg italic text-center">
                       "Meu trabalho não é sobre estar nas redes, é sobre estar da maneira certa, com estratégia, clareza
                       e consistência."
                     </p>
@@ -194,18 +193,6 @@ export default function SobrePage() {
             <div className="max-w-4xl mx-auto space-y-6">
               {education.map((edu, index) => (
                 <EducationCard key={index} {...edu} />
-              ))}
-            </div>
-          </section>
-        </FadeInUp>
-
-        {/* Certifications Section */}
-        <FadeInUp delay={700}>
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#2E4365] mb-8 text-center">Certificações</h2>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-              {certifications.map((cert, index) => (
-                <CertificationCard key={index} {...cert} />
               ))}
             </div>
           </section>

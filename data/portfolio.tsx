@@ -2,21 +2,21 @@ export const projects = [
   {
     title: "Estratégia, posicionamento e vendas no digital",
     category: "Social Media",
-    image: "/placeholder.svg?height=350&width=400",
+    image: "/images/social-media-cubes.jpg",
   },
   {
     title: "Imagens que conectam",
     category: "Audiovisual",
-    image: "/placeholder.svg?height=350&width=400",
+    image: "/images/video-production.jpg",
   },
   {
     title: "Presença que gera valor",
     category: "WebDesign",
-    image: "/placeholder.svg?height=350&width=400",
+    image: "/images/web-development.jpg",
   },
   {
     title: "Memórias que vendem",
     category: "Cobertura de Eventos",
-    image: "/placeholder.svg?height=350&width=400",
+    image: "/images/event-photography.jpg",
   },
 ]

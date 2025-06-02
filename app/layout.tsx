@@ -12,9 +12,12 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "JL Media - Social Media Portfolio",
+  title: "Mirella Modina - Social Media",
   description: "Portfolio de serviços de Social Media e criação de conteúdo",
-    generator: 'v0.dev'
+  generator: "victor-astrath",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({

@@ -30,8 +30,8 @@ export function Header() {
       <Link href="/" className="flex items-center gap-2">
         <div className="relative w-32 h-8">
           <Image
-            src="/placeholder.svg?height=32&width=128"
-            alt="JL Media Logo"
+            src="/images/logo-mirella-modina.png"
+            alt="Mirella Modina Logo"
             fill
             className="object-contain"
             priority

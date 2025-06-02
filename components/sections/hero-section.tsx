@@ -33,8 +33,8 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Social Media Management"
+                src="/images/mirella-hero.jpg"
+                alt="Mirella Modina - Social Media Professional"
                 fill
                 className="object-cover"
                 priority

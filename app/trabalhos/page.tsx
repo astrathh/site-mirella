@@ -1,8 +1,8 @@
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { TrabalhosSlider } from "@/components/trabalhos/trabalhos-slider"
+import { TrabalhosSliderReal } from "@/components/trabalhos/trabalhos-slider-real"
 import { FadeInUp } from "@/components/animations/fade-in-up"
-import { categoriasTrabalhos } from "@/data/trabalhos"
+import { categoriasTrabalhos } from "@/data/trabalhos-real"
 
 export default function TrabalhosPage() {
   return (
@@ -34,7 +34,7 @@ export default function TrabalhosPage() {
                 </div>
 
                 {/* Slider */}
-                <TrabalhosSlider title="" trabalhos={categoria.trabalhos} />
+                <TrabalhosSliderReal title="" trabalhos={categoria.trabalhos} />
               </div>
             </FadeInUp>
           ))}

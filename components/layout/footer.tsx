@@ -10,8 +10,8 @@ export function Footer() {
             <Link href="/" className="inline-block">
               <div className="relative w-32 h-8">
                 <Image
-                  src="/placeholder.svg?height=32&width=128"
-                  alt="JL Media Logo"
+                  src="/images/logo-mirella-modina.png"
+                  alt="Mirella Modina Logo"
                   fill
                   className="object-contain brightness-0 invert"
                 />
